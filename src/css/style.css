@@ -17,6 +17,8 @@
   --color-rose-logo-light: #d9aba7;  /* Verlauf im Schriftzug oben links */
   --color-rose-logo-dark: #a8706d;
   --color-gold: #b8975a;             /* Gold, z. B. Unterzeile im Logo */
+  --color-gold-light: #d9b866;       /* Glanzlicht im Goldverlauf */
+  --color-gold-dark: #7a5a22;        /* Schatten im Goldverlauf */
 
   /* Rollen */
   --color-text: var(--color-brown);
@@ -307,13 +309,7 @@ p {
   background:
     radial-gradient(ellipse at center, rgba(248, 242, 232, 0.25), transparent 70%),
     linear-gradient(135deg, var(--color-rose-light), var(--color-rose));
-}
-
-/* Schriftzug mittig, Slogan linksbündig darunter */
-.banner-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  text-align: center;
 }
 
 .banner-title {
@@ -329,20 +325,43 @@ p {
 .banner-tagline {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin: 1rem 0 0;
   font-family: var(--font-heading);
   font-size: clamp(1.1rem, 2.6vw, 1.9rem);
   font-style: italic;
-  color: var(--color-gold);
+  color: var(--color-brown);
 }
 
-/* Zierlinie rechts vom Slogan */
+/* Slogan-Schrift wie glänzendes Gold */
+.banner-tagline span {
+  /* Platz für Unterlängen, sonst fehlt dort der Verlauf */
+  padding-bottom: 0.15em;
+  color: var(--color-gold);
+  background: linear-gradient(
+    100deg,
+    var(--color-gold-dark) 0%,
+    var(--color-gold-light) 30%,
+    var(--color-gold) 50%,
+    var(--color-gold-light) 75%,
+    var(--color-gold-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Leichte Kante, damit das Gold auf dem Rosé lesbar bleibt */
+  filter: drop-shadow(0 1px 0 rgba(74, 46, 34, 0.18));
+}
+
+/* Zierlinien links und rechts vom Slogan */
+.banner-tagline::before,
 .banner-tagline::after {
   content: "";
-  width: clamp(48px, 12vw, 144px);
+  width: clamp(24px, 6vw, 72px);
   height: 1px;
-  background: currentColor;
+  background: var(--color-brown);
+  opacity: 0.6;
 }
 
 /* ---------- Inhalte ---------- */
@@ -675,8 +694,9 @@ blockquote footer {
     aspect-ratio: 4 / 3;
   }
 
+  .banner-tagline::before,
   .banner-tagline::after {
-    width: 32px;
+    display: none;
   }
 
   .hero {
