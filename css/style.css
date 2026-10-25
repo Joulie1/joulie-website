@@ -1,17 +1,17 @@
 /* ==========================================================================
-   Julie – Website
+   Joulie – Website
    Style-Grundlage. Alle Farben & Maße als Variablen, siehe STYLEGUIDE.md
    ========================================================================== */
 
 :root {
   /* Markenfarben */
   --color-brown: #4a2e22;      /* Dunkelbraun */
-  --color-beige: #f3eadb;      /* Helles Beige */
+  --color-beige: #f8f2e8;      /* Helles Beige */
   --color-rose: #c4908e;       /* Alt-Rosé */
 
   /* Abgeleitete Töne */
   --color-brown-soft: #6b4a3c;
-  --color-beige-dark: #e6d8c3;
+  --color-beige-dark: #ebdfcd;
   --color-rose-light: #e8cfcb;
   --color-white: #fffaf4;
 
@@ -197,6 +197,52 @@ p {
 .nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
 .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
 .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Banner (Startseite) ---------- */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 6;
+  padding: 2rem var(--gutter);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse at center, rgba(248, 242, 232, 0.25), transparent 70%),
+    linear-gradient(135deg, var(--color-rose-light), var(--color-rose));
+  text-align: center;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--color-brown);
+}
+
+.banner-tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.6vw, 1.9rem);
+  font-style: italic;
+  color: var(--color-brown);
+}
+
+/* Zierlinien links und rechts vom Slogan */
+.banner-tagline::before,
+.banner-tagline::after {
+  content: "";
+  width: clamp(24px, 6vw, 72px);
+  height: 1px;
+  background: var(--color-brown);
+  opacity: 0.6;
+}
 
 /* ---------- Inhalte ---------- */
 
@@ -505,6 +551,15 @@ blockquote footer {
 
   main {
     padding-block: 2.5rem;
+  }
+
+  .banner {
+    aspect-ratio: 4 / 3;
+  }
+
+  .banner-tagline::before,
+  .banner-tagline::after {
+    display: none;
   }
 
   .hero {

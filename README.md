@@ -1,4 +1,4 @@
-# Julies Website
+# Joulies Website
 
 Statische Website (HTML + CSS + etwas JavaScript), veröffentlicht über GitHub Pages.
 

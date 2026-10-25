@@ -1,4 +1,4 @@
-# Style Guide – Julies Website
+# Style Guide – Joulies Website
 
 Dieser Style Guide sammelt alle Gestaltungsregeln der Seite. Die Werte sind als
 CSS-Variablen in `css/style.css` (Block `:root`) hinterlegt. Wenn sich hier etwas
@@ -6,12 +6,12 @@ CSS-Variablen in `css/style.css` (Block `:root`) hinterlegt. Wenn sich hier etwa
 
 ## Farben
 
-Die drei Markenfarben, von Julie festgelegt:
+Die drei Markenfarben, von Joulie festgelegt:
 
 | Farbe        | Hex       | CSS-Variable     | Einsatz                                   |
 |--------------|-----------|------------------|-------------------------------------------|
 | Dunkelbraun  | `#4A2E22` | `--color-brown`  | Text, Buttons, Footer                     |
-| Helles Beige | `#F3EADB` | `--color-beige`  | Seitenhintergrund, Text auf Braun         |
+| Helles Beige | `#F8F2E8` | `--color-beige`  | Seitenhintergrund, Text auf Braun         |
 | Alt-Rosé     | `#C4908E` | `--color-rose`   | Akzente, Hover, aktiver Menüpunkt, Linien |
 
 Abgeleitete Töne (nur zur Unterstützung):
@@ -19,7 +19,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 | Farbe             | Hex       | CSS-Variable          |
 |-------------------|-----------|-----------------------|
 | Braun, weicher    | `#6B4A3C` | `--color-brown-soft`  |
-| Beige, dunkler    | `#E6D8C3` | `--color-beige-dark`  |
+| Beige, dunkler    | `#EBDFCD` | `--color-beige-dark`  |
 | Rosé, hell        | `#E8CFCB` | `--color-rose-light`  |
 | Warmweiß (Karten) | `#FFFAF4` | `--color-white`       |
 
@@ -45,6 +45,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 
 ## Komponenten
 
+- **Banner (Startseite)**: Querformat, mittig, Hintergrund Rosé-Verlauf (später Foto). Großer Schriftzug „Joulie“ (Cormorant Garamond), darunter der Slogan *a voice for unforgettable moments* kursiv mit feinen Zierlinien
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
 - **Trennlinie**: kurze Rosé-Linie unter Seitentiteln
