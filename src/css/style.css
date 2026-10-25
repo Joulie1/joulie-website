@@ -16,6 +16,7 @@
   --color-white: #fffaf4;
   --color-rose-logo-light: #d9aba7;  /* Verlauf im Schriftzug oben links */
   --color-rose-logo-dark: #a8706d;
+  --color-gold: #b8975a;             /* Gold, z. B. Unterzeile im Logo */
 
   /* Rollen */
   --color-text: var(--color-brown);
@@ -132,16 +133,23 @@ p {
   min-height: var(--header-height);
 }
 
-/* Schriftzug JOULIE wie im Banner, in Rosé mit leichtem Verlauf */
+/* Schriftzug JOULIE wie im Banner, in Rosé mit leichtem Verlauf,
+   darunter klein die Unterzeile in Gold */
 .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo-name {
   font-family: var(--font-heading);
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  text-decoration: none;
   /* Platz für die Unterlänge des J, sonst fehlt dort der Verlauf */
   padding-bottom: 0.2em;
   color: var(--color-rose);
@@ -149,6 +157,16 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.logo-sub {
+  margin-top: -0.15rem;
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-gold);
 }
 
 .main-nav ul {
@@ -599,8 +617,12 @@ blockquote footer {
     padding-block: 0;
   }
 
-  .logo {
+  .logo-name {
     font-size: 1.9rem;
+  }
+
+  .logo-sub {
+    font-size: 0.5rem;
   }
 
   .nav-toggle {

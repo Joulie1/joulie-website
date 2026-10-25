@@ -17,7 +17,10 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/{{ lang }}/">{{ site.name }}</a>
+      <a class="logo" href="/{{ lang }}/">
+        <span class="logo-name">{{ site.name }}</span>
+        <span class="logo-sub">{{ "logo.subline" | t(lang) }}</span>
+      </a>
       <nav class="main-nav" id="main-nav" aria-label="{{ 'ui.main_nav' | t(lang) }}">
         <ul>
           {%- for item in site.nav %}

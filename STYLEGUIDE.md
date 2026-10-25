@@ -22,6 +22,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 | Beige, dunkler    | `#EBDFCD` | `--color-beige-dark`  |
 | Rosé, hell        | `#E8CFCB` | `--color-rose-light`  |
 | Warmweiß (Karten) | `#FFFAF4` | `--color-white`       |
+| Gold              | `#B8975A` | `--color-gold`        |
 
 ## Typografie
 
@@ -45,7 +46,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 
 ## Komponenten
 
-- **Logo (oben links)**: Schriftzug „JOULIE“ wie im Banner (Cormorant Garamond 600, Großbuchstaben, weite Laufweite), in Rosé mit leichtem diagonalen Verlauf von `#D9ABA7` nach `#A8706D` (`--color-rose-logo-light` / `--color-rose-logo-dark`). Das runde Platzhalter-Logo dient nur noch als Favicon
+- **Logo (oben links)**: Schriftzug „JOULIE“ wie im Banner (Cormorant Garamond 600, Großbuchstaben, weite Laufweite), in Rosé mit leichtem diagonalen Verlauf von `#D9ABA7` nach `#A8706D` (`--color-rose-logo-light` / `--color-rose-logo-dark`). Darunter klein die Unterzeile „Hochzeiten und Events“ (EN: „Weddings & Events“) in Gold, Lato 700, Großbuchstaben, weite Laufweite. Das runde Platzhalter-Logo dient nur noch als Favicon
 - **Banner (Startseite)**: Querformat, mittig, Hintergrund Rosé-Verlauf (später Foto). Großer Schriftzug „JOULIE“ in Großbuchstaben und in der Hintergrundfarbe Beige (Cormorant Garamond), darunter der Slogan *a voice for unforgettable moments* kursiv mit feinen Zierlinien
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
