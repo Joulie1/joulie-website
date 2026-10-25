@@ -1,0 +1,13 @@
+{
+  "name": "Joulie",
+  "lang": "de",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About Me", "url": "/about.html" },
+    { "label": "Hörproben", "url": "/hoerproben.html" },
+    { "label": "Preise", "url": "/preise.html" },
+    { "label": "Repertoire", "url": "/repertoire.html" },
+    { "label": "Rezensionen", "url": "/rezensionen.html" },
+    { "label": "Kontakt", "url": "/kontakt.html" }
+  ]
+}

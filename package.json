@@ -1,0 +1,12 @@
+{
+  "name": "joulie-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "PATH_PREFIX=/ eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  }
+}
