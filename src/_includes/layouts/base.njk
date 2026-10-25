@@ -28,11 +28,17 @@
           {%- endfor %}
         </ul>
       </nav>
-      <ul class="lang-switch" aria-label="{{ 'ui.language' | t(lang) }}">
-        {%- for l in site.languages %}
-        <li><a href="/{{ l.code }}/{{ slug }}" hreflang="{{ l.code }}" lang="{{ l.code }}" title="{{ l.label }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.code | upper }}</a></li>
-        {%- endfor %}
-      </ul>
+      <div class="lang-switch">
+        <button class="lang-current" type="button" aria-label="{{ 'ui.language' | t(lang) }}" aria-expanded="false" aria-controls="lang-menu">
+          {{ lang | upper }}
+          <svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <ul class="lang-menu" id="lang-menu">
+          {%- for l in site.languages %}
+          <li><a href="/{{ l.code }}/{{ slug }}" hreflang="{{ l.code }}" lang="{{ l.code }}" title="{{ l.label }}"{% if l.code == lang %} aria-current="true"{% endif %}>{{ l.code | upper }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
       <button class="nav-toggle" type="button" aria-label="{{ 'ui.menu_open' | t(lang) }}" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>

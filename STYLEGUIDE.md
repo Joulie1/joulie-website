@@ -32,16 +32,16 @@ Abgeleitete Töne (nur zur Unterstützung):
 ## Layout
 
 - Inhalt immer mittig zentriert, maximale Breite `1100px` (`--content-width`)
-- Oben: Logo links, horizontales Menü rechts daneben
+- Oben: Logo links in der Ecke, Sprachauswahl rechts in der Ecke, horizontales Menü mittig dazwischen
 - Inhalte darunter von oben nach unten
 
 ## Breakpoints
 
 | Gerät   | Breite          | Verhalten                                              |
 |---------|-----------------|--------------------------------------------------------|
-| Laptop  | ab 1024px       | Logo links, Menü in einer Zeile rechts, 3 Spalten      |
-| Tablet  | 768px – 1023px  | Logo oben mittig, Menü darunter zentriert, 2 Spalten   |
-| Mobile  | bis 767px       | Logo links, Menü hinter Burger-Icon, 1 Spalte          |
+| Laptop  | ab 1024px       | Logo links, Menü mittig, Sprache rechts, 3 Spalten     |
+| Tablet  | 768px – 1023px  | Logo oben mittig, Sprache oben rechts, Menü darunter zentriert, 2 Spalten |
+| Mobile  | bis 767px       | Logo links, Sprache und Burger-Icon rechts, 1 Spalte   |
 
 ## Komponenten
 
@@ -49,7 +49,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
 - **Trennlinie**: kurze Rosé-Linie unter Seitentiteln
-- **Sprachumschalter**: oben rechts „DE | EN“ in Lato 700, Großbuchstaben. Aktive Sprache und Hover in Alt-Rosé, Trennstrich in dunklerem Beige
+- **Sprachumschalter**: immer ganz oben rechts in der Ecke. Zeigt das Kürzel der aktuellen Sprache („DE ⌄“, Lato 700). Klick öffnet ein kleines Aufklappmenü mit allen Sprachen übereinander (DE, EN, weitere über `src/_data/site.json`). Aktive Sprache und Hover in Alt-Rosé
 
 ## Offen / folgt
 

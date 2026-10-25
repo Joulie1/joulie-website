@@ -11,7 +11,7 @@ Statische Website, gebaut mit [Eleventy](https://www.11ty.dev/) und veröffentli
 - `src/pages/*.njk`: die einzelnen Seiten, jede wird einmal pro Sprache gebaut
 - `src/weiterleitung.njk`: Startadresse, leitet je nach Browsersprache auf `/de/` oder `/en/`
 - `src/css/style.css`: alle Styles, Farben als Variablen
-- `src/js/main.js`: Burger-Menü auf dem Handy
+- `src/js/main.js`: Burger-Menü auf dem Handy und Aufklappen der Sprachauswahl
 - `src/assets/`: Logo und Bilder
 - `STYLEGUIDE.md`: Farben, Schriften, Breakpoints
 
