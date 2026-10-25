@@ -360,8 +360,11 @@ p {
   content: "";
   width: clamp(24px, 6vw, 72px);
   height: 1px;
-  background: var(--color-brown);
-  opacity: 0.6;
+  background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold-light));
+}
+
+.banner-tagline::after {
+  background: linear-gradient(90deg, var(--color-gold-light), var(--color-gold-dark));
 }
 
 /* ---------- Inhalte ---------- */
