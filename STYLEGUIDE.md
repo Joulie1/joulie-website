@@ -32,14 +32,14 @@ Abgeleitete Töne (nur zur Unterstützung):
 ## Layout
 
 - Inhalt immer mittig zentriert, maximale Breite `1100px` (`--content-width`)
-- Oben: Logo links in der Ecke, Sprachauswahl rechts in der Ecke, horizontales Menü mittig dazwischen
+- Oben: Logo links in der Ecke, Sprachauswahl rechts in der Ecke, horizontales Menü dazwischen, mit gleichem Abstand zu Logo und Sprachauswahl (nicht seitenmittig)
 - Inhalte darunter von oben nach unten
 
 ## Breakpoints
 
 | Gerät   | Breite          | Verhalten                                              |
 |---------|-----------------|--------------------------------------------------------|
-| Laptop  | ab 1024px       | Logo links, Menü mittig, Sprache rechts, 3 Spalten     |
+| Laptop  | ab 1024px       | Logo links, Sprache rechts, Menü mit gleichem Abstand dazwischen, 3 Spalten |
 | Tablet  | 768px – 1023px  | Logo oben mittig, Sprache oben rechts, Menü darunter zentriert, 2 Spalten |
 | Mobile  | bis 767px       | Logo links, Sprache und Burger-Icon rechts, 1 Spalte   |
 
