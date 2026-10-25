@@ -398,6 +398,11 @@ main {
   object-position: 50% 30%;
 }
 
+.hero-image--small {
+  width: 80%;
+  justify-self: center;
+}
+
 .eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
