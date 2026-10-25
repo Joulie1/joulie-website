@@ -1,7 +1,7 @@
 # Style Guide – Joulies Website
 
 Dieser Style Guide sammelt alle Gestaltungsregeln der Seite. Die Werte sind als
-CSS-Variablen in `css/style.css` (Block `:root`) hinterlegt. Wenn sich hier etwas
+CSS-Variablen in `src/css/style.css` (Block `:root`) hinterlegt. Wenn sich hier etwas
 ändert, bitte dort mitziehen.
 
 ## Farben
@@ -52,5 +52,5 @@ Abgeleitete Töne (nur zur Unterstützung):
 
 ## Offen / folgt
 
-- Finales Logo (aktuell Platzhalter `assets/logo.svg`)
+- Finales Logo (aktuell Platzhalter `src/assets/logo.svg`)
 - Weitere Style-Regeln
