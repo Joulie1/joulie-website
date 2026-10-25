@@ -60,6 +60,10 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
+
+  // Versionsnummer für CSS/JS, damit Browser nach jedem Deploy die neuen
+  // Dateien laden statt alte aus dem Cache
+  eleventyConfig.addGlobalData("version", Date.now().toString(36));
 }
 
 export const config = {
