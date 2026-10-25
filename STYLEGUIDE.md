@@ -49,7 +49,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
 - **Trennlinie**: kurze Rosé-Linie unter Seitentiteln
-- **Sprachumschalter**: runder Kreis (34px) oben rechts mit der Flagge der aktuellen Sprache (Deutschland / USA), beiger Rand, Hover in Alt-Rosé. Klick öffnet ein kleines Menü mit Deutsch / English
+- **Sprachumschalter**: oben rechts „DE | EN“ in Lato 700, Großbuchstaben. Aktive Sprache und Hover in Alt-Rosé, Trennstrich in dunklerem Beige
 
 ## Offen / folgt
 
