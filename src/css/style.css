@@ -17,8 +17,8 @@
   --color-rose-logo-light: #d9aba7;  /* Verlauf im Schriftzug oben links */
   --color-rose-logo-dark: #a8706d;
   --color-gold: #b8975a;             /* Gold, z. B. Unterzeile im Logo */
-  --color-gold-light: #d9b866;       /* Glanzlicht im Goldverlauf */
-  --color-gold-dark: #7a5a22;        /* Schatten im Goldverlauf */
+  --color-gold-light: #c4a052;       /* Glanzlicht im Goldverlauf */
+  --color-gold-dark: #8a6a2c;        /* Schatten im Goldverlauf */
 
   /* Rollen */
   --color-text: var(--color-brown);
