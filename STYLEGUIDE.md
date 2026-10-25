@@ -45,7 +45,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 
 ## Komponenten
 
-- **Banner (Startseite)**: Querformat, mittig, Hintergrund Rosé-Verlauf (später Foto). Großer Schriftzug „Joulie“ (Cormorant Garamond), darunter der Slogan *a voice for unforgettable moments* kursiv mit feinen Zierlinien
+- **Banner (Startseite)**: Querformat, mittig, Hintergrund Rosé-Verlauf (später Foto). Großer Schriftzug „JOULIE“ in Großbuchstaben und in der Hintergrundfarbe Beige (Cormorant Garamond), darunter der Slogan *a voice for unforgettable moments* kursiv mit feinen Zierlinien
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
 - **Trennlinie**: kurze Rosé-Linie unter Seitentiteln

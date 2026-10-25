@@ -218,8 +218,9 @@ p {
   font-size: clamp(4rem, 12vw, 9rem);
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.04em;
-  color: var(--color-brown);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-bg);
 }
 
 .banner-tagline {
