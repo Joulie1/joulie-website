@@ -1,0 +1,23 @@
+---
+slug: "kontakt.html"
+titleKey: kontakt.title
+permalink: "/{{ language.code }}/kontakt.html"
+---
+{%- set lang = language.code -%}
+<div class="page-title">
+  <h1>{{ "kontakt.title" | t(lang) }}</h1>
+  <p class="lead">{{ "kontakt.lead" | t(lang) }}</p>
+  <hr class="divider">
+</div>
+<form class="contact-form" action="mailto:kontakt@example.com" method="post" enctype="text/plain">
+  <label>{{ "kontakt.name" | t(lang) }}
+    <input type="text" name="name" required>
+  </label>
+  <label>{{ "kontakt.email" | t(lang) }}
+    <input type="email" name="email" required>
+  </label>
+  <label>{{ "kontakt.message" | t(lang) }}
+    <textarea name="nachricht" rows="6" required></textarea>
+  </label>
+  <button class="button" type="submit">{{ "kontakt.send" | t(lang) }}</button>
+</form>

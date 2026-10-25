@@ -1,0 +1,34 @@
+---
+slug: ""
+titleKey: nav.home
+permalink: "/{{ language.code }}/"
+---
+{%- set lang = language.code -%}
+<section class="banner">
+  <div class="banner-inner">
+    <h1 class="banner-title">{{ site.name }}</h1>
+    <p class="banner-tagline">{{ "home.tagline" | t(lang) }}</p>
+  </div>
+</section>
+
+<section class="section hero">
+  <div>
+    <span class="eyebrow">{{ "home.eyebrow" | t(lang) }}</span>
+    <h2>{{ "home.heading" | t(lang) }}</h2>
+    <p class="lead">{{ "home.lead" | t(lang) }}</p>
+    <a class="button" href="/{{ lang }}/kontakt.html">{{ "home.cta" | t(lang) }}</a>
+  </div>
+  <div class="hero-image">{{ "common.photo" | t(lang) }}</div>
+</section>
+
+<section class="section">
+  <div class="cards">
+    {%- for card in [["about", "about.html"], ["listen", "hoerproben.html"], ["repertoire", "repertoire.html"]] %}
+    <div class="card">
+      <h3>{{ ("home.card_" + card[0]) | t(lang) }}</h3>
+      <p>{{ "common.placeholder" | t(lang) }}</p>
+      <a href="/{{ lang }}/{{ card[1] }}">{{ ("home.card_" + card[0] + "_link") | t(lang) }}</a>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

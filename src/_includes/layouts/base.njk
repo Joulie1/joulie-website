@@ -1,9 +1,13 @@
+{%- set lang = language.code -%}
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.url == "/" %}{{ site.name }}{% else %}{{ title }} – {{ site.name }}{% endif %}</title>
+  <title>{% if slug %}{{ titleKey | t(lang) }} – {% endif %}{{ site.name }}</title>
+  {%- for l in site.languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="/{{ l.code }}/{{ slug }}">
+  {%- endfor %}
   <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +17,30 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">
+      <a class="logo" href="/{{ lang }}/">
         <img src="/assets/logo.svg" alt="">
         <span class="logo-text">{{ site.name }}</span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="main-nav" id="main-nav" aria-label="Hauptmenü">
+      <nav class="main-nav" id="main-nav" aria-label="{{ 'ui.main_nav' | t(lang) }}">
         <ul>
           {%- for item in site.nav %}
-          <li><a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          <li><a href="/{{ lang }}/{{ item.slug }}"{% if item.slug == slug %} aria-current="page"{% endif %}>{{ item.key | t(lang) }}</a></li>
           {%- endfor %}
         </ul>
       </nav>
+      <div class="lang-switch">
+        <button class="lang-current" type="button" aria-label="{{ 'ui.language' | t(lang) }}" aria-expanded="false" aria-controls="lang-menu">
+          <img src="/assets/flags/{{ language.flag }}.svg" alt="{{ language.label }}">
+        </button>
+        <ul class="lang-menu" id="lang-menu">
+          {%- for l in site.languages %}
+          <li><a href="/{{ l.code }}/{{ slug }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}><img src="/assets/flags/{{ l.flag }}.svg" alt="">{{ l.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="{{ 'ui.menu_open' | t(lang) }}" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -36,7 +50,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {{ "now" | year }} {{ site.name }} · <a href="/kontakt.html">Kontakt</a> · Impressum · Datenschutz</p>
+      <p>&copy; {{ "now" | year }} {{ site.name }} · <a href="/{{ lang }}/kontakt.html">{{ "nav.kontakt" | t(lang) }}</a> · {{ "footer.impressum" | t(lang) }} · {{ "footer.datenschutz" | t(lang) }}</p>
     </div>
   </footer>
 

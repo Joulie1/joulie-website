@@ -1,0 +1,22 @@
+---
+slug: "hoerproben.html"
+titleKey: hoerproben.title
+permalink: "/{{ language.code }}/hoerproben.html"
+---
+{%- set lang = language.code -%}
+<div class="page-title">
+  <h1>{{ "hoerproben.title" | t(lang) }}</h1>
+  <p class="lead">{{ "hoerproben.lead" | t(lang) }}</p>
+  <hr class="divider">
+</div>
+<section class="audio-list text-block">
+  {%- for i in range(1, 5) %}
+  <div class="audio-item">
+    <div>
+      <h3>{{ "hoerproben.track" | t(lang) }} {{ i }}</h3>
+      <p>{{ "hoerproben.artist" | t(lang) }}</p>
+    </div>
+    <audio controls preload="none"></audio>
+  </div>
+  {%- endfor %}
+</section>

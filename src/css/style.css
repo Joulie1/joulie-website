@@ -149,6 +149,10 @@ p {
   letter-spacing: 0.04em;
 }
 
+.main-nav {
+  margin-left: auto;
+}
+
 .main-nav ul {
   display: flex;
   gap: 1.75rem;
@@ -197,6 +201,78 @@ p {
 .nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
 .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
 .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Sprachumschalter ---------- */
+
+.lang-switch {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lang-current {
+  display: block;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 2px solid var(--color-beige-dark);
+  border-radius: 50%;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.lang-current:hover,
+.lang-open .lang-current {
+  border-color: var(--color-rose);
+}
+
+.lang-current img,
+.lang-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 20;
+  display: none;
+  min-width: 150px;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: 0 6px 20px rgba(74, 46, 34, 0.15);
+}
+
+.lang-open .lang-menu {
+  display: block;
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-brown);
+}
+
+.lang-menu a:hover,
+.lang-menu a[aria-current] {
+  color: var(--color-rose);
+}
+
+.lang-menu img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
 
 /* ---------- Banner (Startseite) ---------- */
 
@@ -352,6 +428,10 @@ main {
   margin-inline: auto;
 }
 
+q {
+  quotes: auto;
+}
+
 blockquote {
   margin: 0;
   font-family: var(--font-heading);
@@ -466,10 +546,21 @@ blockquote footer {
 
 @media (max-width: 1023px) {
   .header-inner {
+    position: relative;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
     padding-block: 1rem;
+  }
+
+  .main-nav {
+    margin-left: 0;
+  }
+
+  .lang-switch {
+    position: absolute;
+    top: 1.25rem;
+    right: var(--gutter);
   }
 
   .main-nav ul {
@@ -523,6 +614,13 @@ blockquote footer {
 
   .nav-toggle {
     display: block;
+  }
+
+  .lang-switch {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-left: auto;
   }
 
   .main-nav {

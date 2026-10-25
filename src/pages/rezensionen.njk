@@ -1,0 +1,21 @@
+---
+slug: "rezensionen.html"
+titleKey: rezensionen.title
+permalink: "/{{ language.code }}/rezensionen.html"
+---
+{%- set lang = language.code -%}
+<div class="page-title">
+  <h1>{{ "rezensionen.title" | t(lang) }}</h1>
+  <p class="lead">{{ "rezensionen.lead" | t(lang) }}</p>
+  <hr class="divider">
+</div>
+<section class="cards">
+  {%- for i in range(1, 4) %}
+  <div class="card">
+    <blockquote>
+      <q>{{ "common.placeholder" | t(lang) }}</q>
+      <footer>Name {{ i }}</footer>
+    </blockquote>
+  </div>
+  {%- endfor %}
+</section>

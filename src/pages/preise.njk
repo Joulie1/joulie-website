@@ -1,0 +1,20 @@
+---
+slug: "preise.html"
+titleKey: preise.title
+permalink: "/{{ language.code }}/preise.html"
+---
+{%- set lang = language.code -%}
+<div class="page-title">
+  <h1>{{ "preise.title" | t(lang) }}</h1>
+  <p class="lead">{{ "preise.lead" | t(lang) }}</p>
+  <hr class="divider">
+</div>
+<section class="cards">
+  {%- for size in ["S", "M", "L"] %}
+  <div class="card">
+    <h3>{{ "preise.package" | t(lang) }} {{ size }}</h3>
+    <p class="price">{{ "preise.from" | t(lang) }} 000 €</p>
+    <p>{{ "common.placeholder" | t(lang) }}</p>
+  </div>
+  {%- endfor %}
+</section>

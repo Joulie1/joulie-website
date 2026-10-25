@@ -1,0 +1,51 @@
+key;de;en
+nav.home;Home;Home
+nav.about;About Me;About Me
+nav.hoerproben;Hörproben;Listen
+nav.preise;Preise;Prices
+nav.repertoire;Repertoire;Repertoire
+nav.rezensionen;Rezensionen;Reviews
+nav.kontakt;Kontakt;Contact
+ui.menu_open;Menü öffnen;Open menu
+ui.main_nav;Hauptmenü;Main menu
+ui.language;Sprache wählen;Choose language
+footer.impressum;Impressum;Legal notice
+footer.datenschutz;Datenschutz;Privacy policy
+common.photo;Foto folgt;Photo coming soon
+common.placeholder;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+home.tagline;a voice for unforgettable moments;a voice for unforgettable moments
+home.eyebrow;Willkommen;Welcome
+home.heading;Hallo, ich bin Joulie.;Hi, I'm Joulie.
+home.lead;Platzhaltertext für eine kurze, persönliche Begrüßung. Hier steht in ein, zwei Sätzen, wer Joulie ist und was sie anbietet.;Placeholder for a short, personal welcome. One or two sentences about who Joulie is and what she offers.
+home.cta;Kontakt aufnehmen;Get in touch
+home.card_about;Über mich;About me
+home.card_about_link;Mehr erfahren;Learn more
+home.card_listen;Hörproben;Listen
+home.card_listen_link;Reinhören;Listen now
+home.card_repertoire;Repertoire;Repertoire
+home.card_repertoire_link;Zum Repertoire;View repertoire
+about.title;About Me;About Me
+about.lead;Ein paar Worte über mich.;A few words about me.
+about.heading;Mein Weg;My journey
+about.text1;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+about.text2;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+hoerproben.title;Hörproben;Listen
+hoerproben.lead;Hier können Besucher in Aufnahmen reinhören. Die Audiodateien folgen.;Listen to some recordings here. Audio files coming soon.
+hoerproben.track;Titel;Title
+hoerproben.artist;Interpret / Komponist;Artist / Composer
+preise.title;Preise;Prices
+preise.lead;Übersicht der Angebote. Die genauen Preise folgen.;An overview of what I offer. Exact prices coming soon.
+preise.package;Paket;Package
+preise.from;ab;from
+repertoire.title;Repertoire;Repertoire
+repertoire.lead;Eine Auswahl aus dem Repertoire.;A selection from my repertoire.
+repertoire.item;Titel;Title
+repertoire.artist;Interpret;Artist
+rezensionen.title;Rezensionen;Reviews
+rezensionen.lead;Was andere sagen.;What others say.
+kontakt.title;Kontakt;Contact
+kontakt.lead;Ich freue mich auf deine Nachricht.;I look forward to hearing from you.
+kontakt.name;Name;Name
+kontakt.email;E-Mail;Email
+kontakt.message;Nachricht;Message
+kontakt.send;Senden;Send

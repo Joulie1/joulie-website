@@ -1,0 +1,19 @@
+---
+slug: "about.html"
+titleKey: about.title
+permalink: "/{{ language.code }}/about.html"
+---
+{%- set lang = language.code -%}
+<div class="page-title">
+  <h1>{{ "about.title" | t(lang) }}</h1>
+  <p class="lead">{{ "about.lead" | t(lang) }}</p>
+  <hr class="divider">
+</div>
+<section class="hero">
+  <div class="hero-image">{{ "common.photo" | t(lang) }}</div>
+  <div>
+    <h2>{{ "about.heading" | t(lang) }}</h2>
+    <p>{{ "about.text1" | t(lang) }}</p>
+    <p>{{ "about.text2" | t(lang) }}</p>
+  </div>
+</section>

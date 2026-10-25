@@ -1,13 +1,16 @@
 {
   "name": "Joulie",
-  "lang": "de",
+  "languages": [
+    { "code": "de", "label": "Deutsch", "flag": "de" },
+    { "code": "en", "label": "English", "flag": "us" }
+  ],
   "nav": [
-    { "label": "Home", "url": "/" },
-    { "label": "About Me", "url": "/about.html" },
-    { "label": "Hörproben", "url": "/hoerproben.html" },
-    { "label": "Preise", "url": "/preise.html" },
-    { "label": "Repertoire", "url": "/repertoire.html" },
-    { "label": "Rezensionen", "url": "/rezensionen.html" },
-    { "label": "Kontakt", "url": "/kontakt.html" }
+    { "key": "nav.home", "slug": "" },
+    { "key": "nav.about", "slug": "about.html" },
+    { "key": "nav.hoerproben", "slug": "hoerproben.html" },
+    { "key": "nav.preise", "slug": "preise.html" },
+    { "key": "nav.repertoire", "slug": "repertoire.html" },
+    { "key": "nav.rezensionen", "slug": "rezensionen.html" },
+    { "key": "nav.kontakt", "slug": "kontakt.html" }
   ]
 }
