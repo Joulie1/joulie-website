@@ -162,8 +162,8 @@ p {
 
 /* Läuft neben der Unterlänge des J */
 .logo-sub {
-  margin-top: calc(var(--logo-size) * -0.33);
-  margin-left: calc(var(--logo-size) * 0.42);
+  margin-top: calc(var(--logo-size) * -0.22);
+  margin-left: calc(var(--logo-size) * 0.22);
   font-family: var(--font-body);
   font-size: 0.6rem;
   font-weight: 700;

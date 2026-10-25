@@ -46,7 +46,7 @@ Abgeleitete Töne (nur zur Unterstützung):
 
 ## Komponenten
 
-- **Logo (oben links)**: Schriftzug „JOULIE“ wie im Banner (Cormorant Garamond 600, Großbuchstaben, weite Laufweite), in Rosé mit leichtem diagonalen Verlauf von `#D9ABA7` nach `#A8706D` (`--color-rose-logo-light` / `--color-rose-logo-dark`). Darunter klein die Unterzeile „Hochzeiten und Events“ (EN: „Weddings & Events“) in Gold, leicht hochgezogen und eingerückt, sodass sie rechts neben der Unterlänge des J läuft, Lato 700, Großbuchstaben, weite Laufweite. Das runde Platzhalter-Logo dient nur noch als Favicon
+- **Logo (oben links)**: Schriftzug „JOULIE“ wie im Banner (Cormorant Garamond 600, Großbuchstaben, weite Laufweite), in Rosé mit leichtem diagonalen Verlauf von `#D9ABA7` nach `#A8706D` (`--color-rose-logo-light` / `--color-rose-logo-dark`). Darunter klein die Unterzeile „Hochzeiten und Events“ (EN: „Weddings & Events“) in Gold, leicht hochgezogen und etwas eingerückt (zwischen J-Unterlänge und linker Kante), Lato 700, Großbuchstaben, weite Laufweite. Das runde Platzhalter-Logo dient nur noch als Favicon
 - **Banner (Startseite)**: Querformat, mittig, Hintergrund Rosé-Verlauf (später Foto). Großer Schriftzug „JOULIE“ in Großbuchstaben und in der Hintergrundfarbe Beige (Cormorant Garamond), darunter der Slogan *a voice for unforgettable moments* kursiv mit feinen Zierlinien
 - **Button**: Pille, Braun mit beiger Schrift, Hover in Alt-Rosé
 - **Karte**: Warmweiß, oben eine 3px-Linie in Alt-Rosé
