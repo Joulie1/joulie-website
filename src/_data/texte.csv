@@ -36,8 +36,14 @@ about.text1;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eius
 about.text2;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
 hoerproben.title;Hörproben;Listen
 hoerproben.lead;Hier können Besucher in Aufnahmen reinhören. Die Audiodateien folgen.;Listen to some recordings here. Audio files coming soon.
-hoerproben.track;Titel;Title
-hoerproben.artist;Interpret / Komponist;Artist / Composer
+hoerproben.track1;All of Me;All of Me
+hoerproben.artist1;John Legend;John Legend
+hoerproben.track2;Let´s Stay Together;Let´s Stay Together
+hoerproben.artist2;Al Green;Al Green
+hoerproben.track3;Lieblingsmensch;Lieblingsmensch
+hoerproben.artist3;Namika;Namika
+hoerproben.track4;Oh Happy Day;Oh Happy Day
+hoerproben.artist4;Sister Act 2;Sister Act 2
 preise.title;Preise;Prices
 preise.lead;Übersicht der Angebote. Die genauen Preise folgen.;An overview of what I offer. Exact prices coming soon.
 preise.package;Paket;Package

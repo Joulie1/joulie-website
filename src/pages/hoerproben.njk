@@ -13,8 +13,8 @@ permalink: "/{{ language.code }}/hoerproben.html"
   {%- for i in range(1, 5) %}
   <div class="audio-item">
     <div>
-      <h3>{{ "hoerproben.track" | t(lang) }} {{ i }}</h3>
-      <p>{{ "hoerproben.artist" | t(lang) }}</p>
+      <h3>{{ ("hoerproben.track" ~ i) | t(lang) }}</h3>
+      <p>{{ ("hoerproben.artist" ~ i) | t(lang) }}</p>
     </div>
     <audio controls preload="none"></audio>
   </div>
