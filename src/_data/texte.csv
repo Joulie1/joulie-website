@@ -20,10 +20,13 @@ home.heading;Hallo, ich bin Joulie.;Hi, I'm Joulie.
 home.lead;Platzhaltertext für eine kurze, persönliche Begrüßung. Hier steht in ein, zwei Sätzen, wer Joulie ist und was sie anbietet.;Placeholder for a short, personal welcome. One or two sentences about who Joulie is and what she offers.
 home.cta;Kontakt aufnehmen;Get in touch
 home.card_about;Über mich;About me
+home.card_about_text;Joulie ist ne tolle Frau;Joulie is a great woman
 home.card_about_link;Mehr erfahren;Learn more
 home.card_listen;Hörproben;Listen
+home.card_listen_text;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 home.card_listen_link;Reinhören;Listen now
 home.card_repertoire;Repertoire;Repertoire
+home.card_repertoire_text;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 home.card_repertoire_link;Zum Repertoire;View repertoire
 about.title;About Me;About Me
 about.lead;Ein paar Worte über mich.;A few words about me.
